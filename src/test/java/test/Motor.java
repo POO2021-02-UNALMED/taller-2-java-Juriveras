@@ -7,10 +7,10 @@ public class Motor {
 	int registro;
 	
 	void cambiarRegistro (int registro) {
-		registro = registro;
+		this.registro = registro;
 	}
 	
 	void asignarTipo (String tipo) {
-		tipo = tipo;
+		this.tipo = tipo;
 	}
 }

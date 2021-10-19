@@ -13,7 +13,7 @@ public class Auto {
 	int cantidadAsientos () {
 		int cant = 0;
 		for (int i = 0; i < asientos.length; i++) {
-			if (asientos[i].getClass() == Asiento.class) {
+			if (this.asientos[i].getClass() == Asiento.class) {
 				cant++;
 			}
 		}
@@ -21,11 +21,11 @@ public class Auto {
 	}
 	
 	String verificarIntegridad () {
-		if (registro != motor.registro) {
+		if (this.registro != this.motor.registro) {
 			return "Las piezas no son originales"; 
 		}		
 		for (int i = 0; i < asientos.length; i++) {
-			if (registro != asientos[i].registro) {
+			if (this.registro != this.asientos[i].registro) {
 				return "Las piezas no son originales";
 			}
 		}		
